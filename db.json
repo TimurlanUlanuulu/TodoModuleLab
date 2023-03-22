@@ -1,0 +1,86 @@
+{
+  "columns": [
+    {
+      "title": "Home",
+      "id": 1
+    },
+    {
+      "title": "Job",
+      "id": 2
+    },
+    {
+      "title": "Tomorrow",
+      "id": 3
+    },
+    {
+      "title": "University",
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "title": " to wash the dishes",
+      "desc": "",
+      "completed": true,
+      "inBasket": false,
+      "columnId": 1,
+      "id": 1
+    },
+    {
+      "title": "submit documents",
+      "desc": "",
+      "completed": false,
+      "inBasket": false,
+      "columnId": 2,
+      "id": 2
+    },
+    {
+      "title": "deadline",
+      "desc": "ask for an extension of the deadline",
+      "completed": false,
+      "inBasket": false,
+      "columnId": 2,
+      "id": 4
+    },
+    {
+      "title": "visit grandma",
+      "desc": "\"here her address\"",
+      "completed": false,
+      "inBasket": true,
+      "columnId": 3,
+      "id": 5
+    },
+    {
+      "title": "buy products",
+      "desc": "carrot, potato, bread, milk etc.",
+      "completed": false,
+      "inBasket": false,
+      "columnId": 3,
+      "id": 6
+    },
+    {
+      "title": "submit a project",
+      "desc": "",
+      "completed": false,
+      "inBasket": false,
+      "columnId": 4,
+      "id": 7
+    },
+    {
+      "title": "wipe the dust",
+      "desc": "",
+      "completed": false,
+      "inBasket": false,
+      "columnId": 1,
+      "id": 8
+    },
+    {
+      "title": " fix the sink",
+      "desc": "",
+      "completed": false,
+      "inBasket": false,
+      "columnId": 1,
+      "id": 9
+    }
+  ]
+}

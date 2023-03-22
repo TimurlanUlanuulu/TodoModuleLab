@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
 
-function App() {
+import "./App.css";
+import AddColumnField from "./components/AddColumnField";
+import ColumnList from "./components/ColumnList";
+import Navbar from "./components/Navbar";
+import { useAppDispatch, useAppSelector } from "./consts/hooks";
+import MainRoutes from "./MainRoutes";
+import { fetchColums } from "./store/columnSlice";
+
+const App: React.FC = () => {
+  const dispatch = useAppDispatch();
+  const { loading, error } = useAppSelector((state) => state.columnStore);
+
+  useEffect(() => {
+    dispatch(fetchColums());
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <MainRoutes />
+      {loading && <h1>Loading...</h1>}
+      {error && <h1>Error {error}</h1>}
     </div>
   );
-}
+};
 
 export default App;
